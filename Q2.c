@@ -1,27 +1,28 @@
 #include <stdio.h>
 int main()
 {
-    int Phy,Chem, Eng, Math, Cs; 
-    float avg; 
+    int Physics, Chemistry, Maths, CS, English, Sum; 
+    float Average; 
 
-    printf("Enter Marks for Phy: \n");
-    scanf("%d", &Phy);
+    printf("Enter Marks for Physics (out of 100): ");
+    scanf("%d", &Physics);
 
-    printf("Enter Marks for Chem: \n");
-    scanf("%d", &Chem);
+    printf("\n Enter Marks for Chemistry (out of 100): ");
+    scanf("%d", &Chemistry);
 
-    printf("Enter Marks for Eng: \n");
-    scanf("%d", &Eng);
+    printf("\n Enter Marks for Maths (out of 100): ");
+    scanf("%d", &Maths);
 
-    printf("Enter Marks for math: \n");
-    scanf("%d", &Math);
+    printf("\n Enter Marks for CS (out of 100): ");
+    scanf("%d", &CS);
 
-    printf("Enter Marks for Cs: \n");
-    scanf("%d", &Cs);
+    printf("\n Enter Marks for English (out of 100): ");
+    scanf("%d", &English);
 
-    avg = (Phy + Chem + Eng + Math + Cs) / 5.0;
+    Sum = (Physics + Chemistry + Maths + CS + English);
+    Average = Sum/5.0;
 
-    printf("Percentage = %.2f\n", avg);
+    printf("\n Percentage is: %.2f\n", Average);
 
     return 0;
 }
